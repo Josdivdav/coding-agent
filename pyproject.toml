@@ -1,0 +1,23 @@
+[project]
+name = "langchain-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JosDivDav", email = "joshuadivine985@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.0",
+    "langchain-google-genai>=4.4.0",
+    "langchain-openai>=1.6.0",
+    "python-dotenv>=1.2.3",
+    "python-env>=1.0.0",
+]
+
+[project.scripts]
+langchain-1 = "langchain_1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
